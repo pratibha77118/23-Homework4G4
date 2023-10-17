@@ -1,21 +1,23 @@
-import math
+   """
+This module contains functions for performing periodic tests.
+   """
 
+import math
 def calculate_periodic_time(l):
-  """Calculates the periodic time of a simple pendulum.
+    """Calculates the periodic time of a simple pendulum.
 
   Args:
     l: The length of the pendulum in meters.
 
   Returns:
     The periodic time of the pendulum in seconds.
-  """
+      """
 # Acceleration due to gravity in meters per second squared.
   g = 9.81
-# use lambda function calculate the periodic time where l is the length of the string and return the value calculated
-  calculate_periodic_time= (lambda l: 2* math.pi/ math.sqrt(g / l))
-  return calculate_periodic_time
-  
-__all__=["calculate_periodic_time"]
+# lambda function to calculate time with length 
+  periodic_time = lambda l: 2* math.pi/ math.sqrt(g / l)
+    return periodic_time
+    __all__=["calculate_periodic_time"]
 
 lengths_list = [2,4,6,8,9]
   # Split the user input string into a list.
@@ -23,7 +25,7 @@ lengths_list = [2,4,6,8,9]
   # Convert the elements of the list to integers
 integer_list = []
 for element in lengths_list:
-   integer_list.append(float(element))
+     integer_list.append(float(element))
     # Print the integer list.
 print("your list of lengths is: ", integer_list,"meters")
     #--------------------------------------------------------------#
