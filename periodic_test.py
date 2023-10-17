@@ -1,6 +1,6 @@
-   """
+"""
 This module contains functions for performing periodic tests.
-   """
+"""
 
 import math
 def calculate_periodic_time(l):
