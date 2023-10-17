@@ -36,4 +36,4 @@ T=[periodic_time for periodic_time in periodic_times]
 round_time=[round(element,2) for element in T]
 print("periodic times corresporing to the lengths are ", round_time,"seconds")
 
-__all__=["period"]
+
